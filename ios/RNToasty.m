@@ -48,7 +48,7 @@ RCT_EXPORT_METHOD(Show:(NSDictionary *)props) {
 
     // toast with all possible options
     [window makeToast: title
-        duration:3.0 position: CSToastPositionBottom
+        duration:[duration doubleValue] position: CSToastPositionBottom
        title: nil image: drawable style: style
       completion:^(BOOL didTap) {
           if (didTap) {
